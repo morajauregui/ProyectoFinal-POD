@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+main{
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  color: #dcdcdc;
+  margin: 50px 20px;
+  font-family: 'DistorsionadaFont';
+  font-size: 80px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+button{
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+div{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  gap: 50px;
+}
+
+.puntos{
+  background-color: white;
+  color: #dcdcdc;
+  font-weight: 700;
+}
+
+.botonPun{
+  background-color: white;
+}
+
+.color-picker {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bebebe;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(113, 113, 113, 0.201);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+
+.color-picker:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px rgba(113, 113, 113, 0.299);
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker::-webkit-color-swatch {
+  border: none;
+  border-radius: 12px;
+}
+
+.color-picker::-moz-color-swatch {
+  border: none;
+  border-radius: 12px;
+}
+
+.myInput{
+  font-family: 'Montserrat', sans-serif;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #bebebe;
+}
