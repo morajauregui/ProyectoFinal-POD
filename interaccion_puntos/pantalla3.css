@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 100%;
   background-color: #dcdcdc;
@@ -26,19 +26,38 @@ a{
   color: rgb(255, 255, 255);
 }
 
+.botones{
+  transition: all 0.2s linear;
+}
+
+.botones:hover{
+  font-weight: 700;
+  transform: scale(1.05);
+}
+
 button{
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0);
   color: rgb(255, 255, 255);
   border: 2px solid #ffffff;
-  padding: 10px;
+  padding: 7px 30px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.2s linear;
+}
+
+button:hover{
+  font-weight: 700;
+  transform: scale(1.05);
 }
 
 div{
-  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
   margin-bottom: 10px;
-  gap: 50px;
+  gap: 60px;
+  justify-content: center;
 }
 
 .puntos{
@@ -63,7 +82,6 @@ div{
   padding: 0;
 }
 
-
 .color-picker:hover {
   transform: scale(1.05);
   box-shadow: 0 0 6px rgba(113, 113, 113, 0.299);
@@ -83,10 +101,81 @@ div{
   border-radius: 12px;
 }
 
+.slider2 {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 150px;
+  height: 10px;
+  background-color: #00000000;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Cambia el fondo al moverlo */
+.slider2:hover {
+  background-color: #00000000;
+}
+
+/* TRACK (barra completa) */
+.slider2::-webkit-slider-runnable-track {
+  height: 5px;
+  background: linear-gradient(to right, #696969, #bcbcbc);
+  border-radius: 5px;
+}
+
+/* THUMB (circulito que se mueve) */
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e2e2e2;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: -5px;
+}
+
+.slider2::-webkit-slider-thumb:hover {
+  transform: scale(1.09);
+}
+
+/* Para Firefox */
+.slider2::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid #c0c0c0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.slider2::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+.slider2::-moz-range-track {
+  background: linear-gradient(to right, #696969, #c4c4c4);
+  height: 10px;
+  border-radius: 5px;
+}
+
 .myInput{
   font-family: 'Montserrat', sans-serif;
-  padding: 4px;
+  width: 200px;
+  height: 30px;
+  padding: 0 16px;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  outline: none;
   font-size: 16px;
-  border-radius: 5px;
-  border: 2px solid #bebebe;
+  background-color: #dcdcdc;
+  color: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
